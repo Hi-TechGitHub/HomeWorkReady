@@ -13,4 +13,10 @@ def open_task():
     os.system('TextFiles\\note.txt')
 
 
-create_task()
+if __name__ == "__main__":
+    allow = input('Создаём заметку? ')
+    if allow.lower() == 'да':
+        create_task()
+    allow = input('Открываем заметки? ')
+    if allow.lower() == 'да':
+        open_task()
